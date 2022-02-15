@@ -14,6 +14,7 @@ body {
     margin: 0;
 }
 
+/* Estilos de Login ---------------------------------------------------------------------- */
 .o-login{
     width: 100%;
     height: 100vh;
@@ -25,6 +26,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    /* justify-items: center; */
 }
 
 .o-logo{
@@ -46,7 +48,7 @@ body {
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 32px;
-    align-items: center;
+    text-align: center;
 }
 
 .o-form{
@@ -86,6 +88,41 @@ body {
     margin-top: 14px;
     margin-bottom: 30px;
 }
+
+.o-container-email{
+    justify-items: center;
+}
+/* Estilos Email, (Ojo estilos anteriores se conservan)---------------------------------------------- */
+.o-email-iamge{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.o-email-iamge img{
+    width: 80px;
+}
+
+.o-resend{
+    font-size: var(--sm);
+}
+
+.o-resend span{
+    color: var(--very-light-pink);
+}
+
+.o-resend a{
+    color: var(--hospital-gren);
+    text-decoration: none;
+}
+
+
+/* Media Queri de login-------------------- */
 
 @media (max-width: 640px) {
     .o-logo{
