@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 
-/* Estilos de Login ---------------------------------------------------------------------- */
+/* Estilos de password ---------------------------------------------------------------------- */
 .o-login{
     width: 100%;
     height: 100vh;
@@ -120,14 +120,44 @@ body {
     color: var(--hospital-gren);
     text-decoration: none;
 }
+/* Estilos del login */
 
+.o-form a{
+    color: var(--hospital-gren);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
+}
 
-/* Media Queri de login-------------------- */
+.o-input-email{
+    margin-bottom: 22px;
+}
+
+.o-button-secondary{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-gren);
+    color: var(--hospital-gren);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+/* Media Queri de password, login, email-------------------- */
 
 @media (max-width: 640px) {
     .o-logo{
         display: block;
     }
-    
+
+    .o-signup-button{
+        width: inherit;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 24px;
+    }
 }
 
