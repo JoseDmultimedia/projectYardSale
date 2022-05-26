@@ -146,6 +146,20 @@ body {
     height: 50px;
 }
 
+/* Estilos para cuenta.html */
+
+.o-input-name-cuenta,
+.o-input-email-cuenta,
+.o-input-password-cuenta {
+    margin-bottom: 22px;
+}
+
+
+.o-title-cuenta{
+    font-size: var(--lg);
+    margin-bottom: 30px;
+    text-align: start;
+}
 /* Media Queri de password, login, email-------------------- */
 
 @media (max-width: 640px) {
