@@ -33,7 +33,7 @@ body {
     width: 150px;
     margin-bottom: 48px;
     justify-self: center;
-    display: none;
+    /* display: none; */
 }
 
 .o-title{
@@ -146,7 +146,7 @@ body {
     height: 50px;
 }
 
-/* Estilos para cuenta.html */
+/* Estilos para cuenta.html -------------------------------------------------*/
 
 .o-input-name-cuenta,
 .o-input-email-cuenta,
@@ -166,7 +166,263 @@ body {
     margin-bottom: 30px;
     text-align: start;
 }
-/* Media Queri de password, login, email-------------------- */
+
+/* Estilos de la pantanlla de inicio - Cards ------------------------------------------------------*/
+
+.o-main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 20px;
+    place-content: center;
+}
+
+.o-product-card{
+    width: 240px;
+}
+
+.o-product-card img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.o-product-card figure img{
+    width: 35px;
+    height: 35px;
+    margin: 0px;
+}
+
+.o-product-card figure{
+    margin: 0px;
+}
+
+.o-information-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.o-information-card div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.o-information-card div p:nth-child(2){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+
+/* Desktop menu styles ------------------------------------------- */
+
+
+.o-desktop-menu{
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0px 20px;
+}
+
+.o-desktop-menu ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.o-desktop-menu ul li{
+    text-align: end;
+}
+
+.o-desktop-menu ul li:nth-child(1),
+.o-desktop-menu ul li:nth-child(2){
+    font-weight: bold;
+}
+
+.o-desktop-menu ul li:last-child{
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.o-desktop-menu ul li:last-child a{
+    color: var(--hospital-gren);
+    font-size: var(--sm);
+}
+
+.o-desktop-menu ul li a{
+    color: var(--black);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Styles mobile menu --------------------------------------------------------- */
+
+.o-mobile-menu{
+    padding: 24px 24px 0px 24px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.o-mobile-menu a{
+   text-decoration: none;
+   color: var(--black);
+   font-weight: bold;
+}
+
+.o-mobile-menu ul{
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+
+.o-mobile-menu ul:nth-child(3){
+    margin: 24px 0 0;
+}
+
+.o-mobile-menu ul li{
+    margin-bottom: 24px;
+}
+
+.o-email{
+    font-size: var(--sm);
+    font-weight: 300 !important;
+}
+
+.o-mobile-menu ul:nth-child(1){
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.o-signout{
+    font-size: var(--sm);
+    color: var(--hospital-gren) !important;
+}
+
+/* My order styles --------------------------------------------------------------- */
+
+.o-myorder{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.o-title-order{
+    font-size: var(--lg);
+    margin-bottom: 40px;
+}
+
+.o-myorder-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.o-myorder-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.o-order{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+.o-order p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.o-order p span:nth-child(1){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.o-order p span:nth-child(2){
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+
+.o-order p:nth-child(2){
+    text-align: end;
+    font-weight: 700;
+}
+
+.o-shopping-car{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.o-shopping-car figure{
+    margin: 0;
+}
+
+.o-shopping-car figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.o-shopping-car p:nth-child(2){
+    color: var(--very-light-pink);
+}
+
+.o-shopping-car p:nth-child(3){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+/* My orders */
+
+.o-orders{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.o-orders p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.o-orders p span:nth-child(1){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.o-orders p span:nth-child(2){
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+.o-orders p:nth-child(2){
+    text-align: end;
+    font-weight: 700;
+}
+
+
+/* Media Query de password, login, email-------------------- */
 
 @media (max-width: 640px) {
     .o-logo{
@@ -179,5 +435,22 @@ body {
         bottom: 0;
         margin-bottom: 24px;
     }
+
+    .o-main-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
+        gap: 20px;
+    }
+
+    .o-product-card{
+        width: 140px;
+    }
+    
+    .o-product-card img{
+        width: 140px;
+        height: 140px;
+    }
+
+
 }
 
